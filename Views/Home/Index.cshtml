@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model string
+
+<div class="text-center">
+    <h1 class="display-4">Enter A Topic To Simplify</h1>
+
+    @using(Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <input name="query" class="form-control" />
+        <div style="height: 10px"></div>
+        <button type="submit">
+            Submit
+        </button>
+    }
+    
+    @if (!string.IsNullOrEmpty(Model))
+    {
+        <h2>Result:</h2>
+        <p>@Model</p>
+    }
+</div>

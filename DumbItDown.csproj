@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject></StartupObject>
+    <UserSecretsId>c9f65955-1ac4-4eeb-a433-79f6eb692190</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Betalgo.OpenAI.GPT3" Version="6.6.3" />
+    <PackageReference Include="LaserCatEyes.HttpClientListener" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
